@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  
+  <main>
+      <div id="successful-msg"></div>
+
+        <div class="main-login-container main-singup-container" >
+            <form action="" id="signUpForm">
+              <h1>Singup</h1>
+              <div class="input-box" id="name-box">
+                <input id="userName" type="text" placeholder="Username" required>
+                <div id="name-msg"></div>
+              </div>
+              <div class="input-box">
+                <input id="email" type="email" placeholder="Email" required>
+                <div id="email-msg"></div>
+              </div>
+              <div class="input-box">
+                <input id="password" type="password" placeholder="Password" required>
+                <div id="pass-msg"></div>
+              </div>
+              <div class="input-box">
+                <input id="confirmPassword"  type="password" placeholder="Confirm Password" required>
+                <div id="password-msg"></div>
+              </div>
+              <div class="input-box">
+                <input id="adress" type="text" placeholder="Adress" required>
+                <div id="adress-msg"></div>
+              </div>
+              <div class="for-inline">
+              <div class="input-box DOB" style="margin: 0; width: 60%;">
+                <input id="DOB" type="date" placeholder="Date of Birth" required>
+                <div id="DOB-msg"></div>
+              </div>
+              
+              <div class="select-dropdown" required>
+                <!-- <div class="genderr" id="genderr">Gender</div> -->
+                <select id="gender" required>
+                  <option selected disabled hidden>Gender</option>
+                  <option>Male </option>
+                  <option>Female </option>
+                  <option>Other </option>
+                </select>
+                <div id="gender-msg"></div>
+              </div>
+            
+            
+            
+            
+            </div>
+            <button type="submit" class="btn" id="btn">Singup</button>
+
+              <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+              </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="singup.js"></script>
+</body>
+</html>

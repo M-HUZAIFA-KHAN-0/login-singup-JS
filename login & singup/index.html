@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="index-container">
+    <div class="user-welcome"></div>
+    <div class="index-btn">
+        <button id="logout">Logout</button>
+    </div>
+    </div>
+
+    <script>
+        const username = JSON.parse(localStorage.getItem('loginUser'));
+        document.querySelector('.user-welcome').textContent = `Welcome, ${username.userName}!`;
+
+        
+        if (!username){
+            location.href = 'login.html';
+        }
+        
+        let logout = document.getElementById('logout');
+
+        logout.addEventListener('click', () => {
+            localStorage.removeItem('loginUser');
+            location.href = 'login.html';
+        });
+
+    </script>
+</body>
+</html>
